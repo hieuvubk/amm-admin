@@ -1,0 +1,79 @@
+:root {
+  .registration-detail {
+    display: flex;
+    flex-flow: column;
+    padding: 30px;
+    margin-left: 260px;
+    .breadcrumb {
+      ul {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin-bottom: 30px;
+        li {
+          a {
+            text-decoration: none;
+            color: #333;
+          }
+        }
+        li.path {
+          margin: 0 5px;
+        }
+      }
+    }
+    .item-detail {
+      padding: 15px;
+      border: 1px solid var(--color-line);
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+    .rowbutton {
+      padding-bottom: 20px;
+      .action {
+        margin-top: 20px !important;
+        .reject {
+          border: 1px solid var(--color-error);
+          color: var(--color-error);
+          padding: 10px 40px;
+          border-radius: 10px;
+          cursor: pointer;
+          background-color: transparent !important;
+        }
+        .approve {
+          margin-left: 20px;
+          border: 1px solid var(--color-success);
+          background-color: var(--color-success);
+          color: var(--color-white);
+          padding: 10px 40px;
+          border-radius: 10px;
+          cursor: pointer;
+        }
+        button:disabled {
+          cursor: not-allowed;
+        }
+      }
+    }
+    .rowdetail {
+      border-bottom: 1px solid var(--color-line);
+      padding-bottom: 10px;
+    }
+    p.title {
+      margin: 10px 0 !important;
+      color: var(--color-dialog-title);
+      font-weight: 700;
+      box-shadow: none !important;
+      font-size: 14px;
+    }
+    p.text {
+      color: var(--color-dialog-label);
+      margin-bottom: 0;
+      font-size: 14px;
+      a {
+        color: var(--color-primary);
+        &:hover {
+          color: var(--color-primary);
+        }
+      }
+    }
+  }
+}

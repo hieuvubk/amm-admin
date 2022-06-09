@@ -1,0 +1,131 @@
+.account-setting-container {
+  margin-top: 24px;
+
+  .title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+
+    color: var(--title-active);
+  }
+
+  .account-setting {
+    border: 1px solid var(--line);
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 0 30px 30px 30px;
+
+    .setting-title {
+      margin-top: 30px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: var(--title-active);
+    }
+
+    .currencies {
+      margin: 10px 0;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: var(--color-body);
+    }
+
+    .wallets-table-container {
+      margin-top: 16px;
+      border: 1px solid var(--line);
+      box-sizing: border-box;
+      border-radius: 10px;
+      padding: 0 20px;
+
+      .theme-custom-table {
+        table-layout: fixed;
+        border-spacing: 0pt;
+        border-collapse: separate;
+        width: 100%;
+        margin-bottom: 0 !important;
+        text-align: left;
+        color: var(--body-text);
+        border-top: 1px solid var(--line);
+      }
+
+      th {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--color-body);
+        padding: 20px;
+        user-select: none;
+        border-bottom: 1px solid var(--line);
+      }
+      td {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        padding: 18px;
+        border-bottom: 1px solid var(--line);
+        border-right: none;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      th {
+        color: var(--title-active);
+      }
+
+      tr:last-child td {
+        border-bottom: none;
+      }
+
+      tr:hover {
+        background: transparent;
+      }
+
+      tbody tr td:last-child {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        > button {
+          margin-right: 10px;
+        }
+
+        > div {
+          height: 30px;
+        }
+      }
+      .empty-data {
+        text-align: center;
+        padding: 20px;
+      }
+    }
+    .pagination {
+      float: right;
+      margin-top: 15px;
+    }
+    .user-type-title + div {
+      margin-top: 16px;
+      display: flex;
+
+      > div > div {
+        border: none;
+        border-radius: 10px;
+
+        > div > div {
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 20px;
+          color: var(--placeholder);
+        }
+      }
+    }
+    .detail {
+      text-align: right;
+      a {
+        margin-right: 5px;
+        color: var(--active-tab);
+      }
+    }
+  }
+}

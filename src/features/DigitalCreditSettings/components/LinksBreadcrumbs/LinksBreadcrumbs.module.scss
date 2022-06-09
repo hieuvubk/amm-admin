@@ -1,0 +1,18 @@
+:root {
+  .links-container {
+    display: flex;
+    flex-flow: row;
+
+    .links {
+      display: block;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      text-decoration: none;
+      color: inherit;
+      white-space: pre;
+      color: var(--body-text);
+      cursor: pointer;
+    }
+  }
+}

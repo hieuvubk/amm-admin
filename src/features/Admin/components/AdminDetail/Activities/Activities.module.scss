@@ -1,0 +1,57 @@
+.activities-container {
+  border: 1px solid var(--line);
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-top: 25px;
+  padding: 30px 30px 20px 30px;
+
+  .title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--title-active);
+  }
+
+  .filter-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+
+    .label-select {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      margin-right: 8px;
+      color: var(--body-text);
+    }
+
+    .date-label {
+      margin-left: 30px;
+    }
+  }
+
+  .table-container {
+    border: 1px solid var(--line);
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 20px 30px;
+
+    .theme-custom-table {
+      border-spacing: 0pt;
+      border-collapse: separate;
+      width: 100%;
+      margin-bottom: 0 !important;
+      text-align: left;
+      color: var(--body-text);
+    }
+  }
+
+  .footer-pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+    color: var(--body-text);
+  }
+}

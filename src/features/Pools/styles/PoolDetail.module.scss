@@ -1,0 +1,120 @@
+:root {
+  .pool-detail {
+    display: flex;
+    flex-flow: column;
+    padding: 0px 30px 30px 30px;
+    margin-left: 260px;
+
+    > div:first-child {
+      margin-top: 30px;
+    }
+
+    .loading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+    }
+
+    .tab-loading {
+      min-height: 200px;
+      border-radius: 20px;
+      background: var(--block-background);
+      border: 1px solid var(--line);
+    }
+
+    .warning {
+      margin-top: 12px !important;
+      margin-bottom: 12px !important;
+      display: flex;
+      align-items: center;
+      background: rgba($color: #ffcc00, $alpha: 0.3);
+      border-radius: 8px;
+      padding: 6px 10px;
+      white-space: pre-wrap;
+
+      > svg {
+        width: 24px;
+        height: 24px;
+      }
+
+      > div {
+        color: var(--title-active);
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        margin-left: 18px;
+      }
+
+      > span {
+        color: var(--color-primary);
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        cursor: pointer;
+      }
+
+      > span:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .utilities-bar {
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    .pool-overview {
+      display: flex;
+      margin-top: 20px;
+      border-radius: 20px;
+      background: var(--block-background);
+      height: 120px;
+      border: 1px solid var(--line);
+    }
+
+    .detail-chart {
+      display: flex;
+      flex-direction: column;
+      min-height: 430px;
+      margin-top: 20px;
+      border: 1px solid var(--line);
+      box-sizing: border-box;
+      border-radius: 10px;
+      padding: 20px;
+      background: var(--block-background);
+    }
+
+    .detail-chart-fullscreen {
+      border: 1px solid var(--line);
+      box-sizing: border-box;
+      border-radius: 10px;
+      padding: 20px;
+      background: var(--block-background);
+      height: 100%;
+      position: fixed !important;
+      top: 0;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      z-index: 2000;
+    }
+
+    .more-detail {
+      margin-top: 30px;
+
+      > hr {
+        margin: 0;
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+        border-top: 1px solid var(--line);
+      }
+
+      > div:last-child {
+        margin-top: 15px;
+      }
+    }
+  }
+}

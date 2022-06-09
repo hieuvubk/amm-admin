@@ -1,0 +1,89 @@
+.switch-button {
+  height: 36px;
+  width: fit-content;
+  background: var(--color-order-input-bg);
+  color: var(--color-body);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+
+  > button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    width: 100px;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  .on-select {
+    color: var(--color-white);
+    background: var(--primary-button-bg);
+  }
+}
+
+.tab-button {
+  height: 26px;
+  width: fit-content;
+  background: transparent;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-body);
+
+  > button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    margin-right: 30px;
+
+    > svg {
+      position: absolute;
+      margin-left: 4px;
+      margin-top: -4px;
+    }
+  }
+
+  .on-select {
+    color: var(--title-active);
+    height: 100%;
+    border-bottom: 3px solid var(--primary-button-bg);
+  }
+}
+
+.chart-button {
+  height: 16px;
+  width: fit-content;
+  background: transparent;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--placeholder);
+
+  > button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    margin-right: 8px;
+    padding: 0 4px;
+  }
+
+  .on-select {
+    color: var(--title-active);
+    height: 100%;
+    background: var(--filter-input-background);
+    border-radius: 3px;
+  }
+}

@@ -1,0 +1,91 @@
+@import './app';
+.loading-rotate {
+  -webkit-animation: spin 1s linear infinite;
+  -moz-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.App {
+  min-width: 1500px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.Snackbar {
+  .MuiSnackbar-anchorOriginTopRight {
+    top: 80px !important;
+  }
+}
+
+.Navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.Content {
+  margin-top: 64px;
+}
+
+// TEXT
+.heading-h1 {
+  font-weight: 700;
+  font-size: calc(#{$size-origin} * 56) !important;
+  line-height: calc(#{$size-origin} * 72);
+}
+.heading-h2 {
+  font-weight: 700;
+  font-size: calc(#{$size-origin} * 40);
+  line-height: calc(#{$size-origin} * 56);
+}
+.heading-h3 {
+  font-weight: 500;
+  font-size: calc(#{$size-origin} * 28);
+  line-height: calc(#{$size-origin} * 40);
+}
+.heading-h4 {
+  font-weight: 500;
+  font-size: calc(#{$size-origin} * 26);
+  line-height: calc(#{$size-origin} * 32);
+}
+.heading-h5 {
+  font-weight: normal;
+  font-size: calc(#{$size-origin} * 22);
+  line-height: calc(#{$size-origin} * 34);
+}
+.heading-h6 {
+  font-weight: normal;
+  font-size: calc(#{$size-origin} * 20);
+  line-height: calc(#{$size-origin} * 28);
+}
+
+.text-large {
+  font-weight: 500;
+  font-size: calc(#{$size-origin} * 16);
+  line-height: calc(#{$size-origin} * 27);
+}
+.text-medium {
+  font-size: calc(#{$size-origin} * 14);
+  line-height: calc(#{$size-origin} * 20);
+}
+.text-small {
+  font-size: calc(#{$size-origin} * 12);
+  line-height: calc(#{$size-origin} * 16);
+}

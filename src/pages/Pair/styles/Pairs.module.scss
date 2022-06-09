@@ -1,0 +1,106 @@
+:root {
+  .pairs {
+    display: flex;
+    padding: 20px;
+    > div {
+      flex-grow: 1;
+      padding: 15px;
+      margin-left: 260px;
+      .pairs-title {
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-top: 20px;
+        color: var(--color-title-active);
+      }
+    }
+    .wrap-container {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 20px;
+      background-color: var(--block-background);
+      .filter-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        label {
+          margin-right: 16px;
+          font-size: 14px;
+        }
+        .box-search {
+          display: flex;
+          align-items: center;
+          margin-right: 24px;
+        }
+      }
+      .table-no-data {
+        font-size: 14px;
+        margin-top: 20px;
+        text-align: center;
+        color: var(--color-body);
+      }
+      .theme-custom-table {
+        border-spacing: 0pt;
+        margin-top: 30px;
+        border-collapse: separate;
+        width: 100%;
+        margin-bottom: 0 !important;
+        text-align: left;
+        color: var(--body-text);
+        border-top: 1px solid var(--line);
+        th {
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 20px;
+          color: var(--color-body);
+          padding: 20px;
+          user-select: none;
+          border-bottom: 1px solid var(--line);
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          font-weight: 700;
+        }
+        td {
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 16px;
+          padding: 18px;
+          border-bottom: 1px solid var(--line);
+          border-right: none;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        tr {
+          cursor: pointer;
+        }
+        tr:last-child td {
+          border-bottom: none;
+        }
+        .title-right {
+          text-align: right;
+        }
+      }
+    }
+  }
+  .footer-pagination {
+    display: flex;
+    justify-content: flex-end !important;
+    margin-top: 20px;
+  }
+  .MuiPaginationItem-page {
+    margin: 20px;
+    button {
+      background-color: var(--input-background);
+      color: var(--color-title-active);
+    }
+  }
+  .status-label {
+    color: var(--body-text);
+  }
+  .select {
+    border: none;
+  }
+}

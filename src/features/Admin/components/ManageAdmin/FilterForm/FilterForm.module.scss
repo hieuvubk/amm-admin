@@ -1,0 +1,37 @@
+.filter-form {
+  height: 36px;
+  margin-top: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .status-select-wrapper {
+    display: flex;
+    align-items: center;
+
+    .label-select {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      margin-right: 8px;
+      color: var(--body-text);
+    }
+
+    .status-select {
+      height: 36px;
+      margin-right: 26px;
+    }
+
+    .search-input {
+      height: 36px;
+    }
+  }
+
+  .create-account-btn {
+    > button {
+      height: 36px;
+      padding: 8px 10px;
+      background: var(--color-success);
+    }
+  }
+}

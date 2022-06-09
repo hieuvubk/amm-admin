@@ -1,0 +1,454 @@
+:root {
+  .new-pool-request {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin-left: 260px;
+
+    .title {
+      margin-top: 30px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 28px;
+      color: var(--title-active);
+    }
+
+    .warning {
+      margin-top: 16px;
+      display: flex;
+      align-items: center;
+      background: rgba($color: #ffcc00, $alpha: 0.3);
+      border-radius: 8px;
+      padding: 6px 10px;
+
+      > svg {
+        width: 24px;
+        height: 24px;
+      }
+
+      > div {
+        color: var(--title-active);
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        margin-left: 18px;
+      }
+    }
+
+    > form {
+      .sub-title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: var(--title-active);
+        margin-bottom: 16px;
+      }
+
+      .from,
+      .email {
+        margin-top: 16px;
+        padding: 16px;
+        border: 1px solid var(--color-border);
+        border-radius: 10px;
+
+        > div:last-child {
+          margin-top: 16px;
+          margin-left: 10px;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 20px;
+          color: var(--color-body);
+        }
+      }
+
+      .pool-types {
+        margin-top: 16px;
+        padding: 16px;
+        border: 1px solid var(--color-border);
+        border-radius: 10px;
+
+        .radio-pool-types {
+          padding-left: 10px;
+        }
+      }
+
+      .digital-credit {
+        margin-top: 16px;
+        padding: 0 16px;
+        border: 1px solid var(--color-border);
+        border-radius: 10px;
+
+        > table {
+          table-layout: fixed;
+          width: 100%;
+
+          > thead {
+            th {
+              font-style: normal;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 20px;
+              color: var(--title-active);
+              padding: 24px 24px;
+              margin: 0;
+              user-select: none;
+            }
+
+            th.digital-credits-th {
+              width: 20%;
+              text-align: left;
+              padding-left: 0;
+            }
+
+            th.balance-th {
+              width: 10%;
+              text-align: right;
+              padding-left: 0;
+            }
+
+            th.weight-th {
+              width: 15%;
+              text-align: right;
+            }
+
+            th.percent-th {
+              width: 10%;
+            }
+
+            th.amount-th {
+              width: 15%;
+
+              > div {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+
+                > svg {
+                  width: 20px;
+                  height: 20px;
+                  fill: var(--title-active);
+                  margin-right: 5px;
+                  cursor: pointer;
+                }
+              }
+            }
+
+            th.price-th {
+              width: 10%;
+              text-align: left;
+              padding-right: 0;
+            }
+
+            th.value-th {
+              width: 10%;
+              text-align: left;
+            }
+
+            th.add-th {
+              width: 10%;
+
+              > div {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 20px;
+                color: var(--color-success);
+
+                > svg {
+                  margin-right: 10px;
+                  stroke: var(--color-success);
+                  cursor: pointer;
+                }
+              }
+
+              .transparent {
+                color: transparent;
+
+                > svg {
+                  stroke: transparent;
+                }
+              }
+            }
+          }
+
+          > tbody {
+            td {
+              font-weight: normal;
+              font-size: 16px;
+              line-height: 20px;
+              color: var(--color-body);
+              white-space: normal;
+              border-top: 1px solid var(--line);
+            }
+
+            td.digital-credits-td {
+              text-align: left;
+              width: fit-content;
+              vertical-align: top;
+              padding: 17.5px 0;
+
+              > div {
+                > button:first-child {
+                  font-weight: 500;
+                  font-size: 16px;
+                  line-height: 20px;
+                  padding-left: 0;
+                  color: var(--color-body);
+                  text-transform: none;
+
+                  img {
+                    margin-right: 6.5px;
+                  }
+                }
+
+                div.error {
+                  color: red;
+                }
+              }
+
+              .token-icon-symbol-unlock {
+                display: flex;
+                align-items: center;
+
+                > button:nth-child(2) {
+                  margin-left: 12px;
+                }
+              }
+            }
+
+            td.balance-td {
+              text-align: right;
+              vertical-align: top;
+              padding: 20px 0;
+              padding-right: 10px;
+              white-space: nowrap;
+            }
+
+            td.weight-td {
+              text-align: left;
+              vertical-align: top;
+              padding: 12px 24px;
+            }
+
+            td.percent-td {
+              text-align: center;
+              vertical-align: top;
+              padding: 20px 24px;
+            }
+
+            td.amount-td {
+              vertical-align: top;
+              padding: 12px 24px;
+            }
+
+            td.price-td {
+              vertical-align: top;
+              padding: 20px 24px;
+            }
+
+            td.value-td {
+              vertical-align: top;
+              padding: 20px 0px;
+              padding-left: 10px;
+              white-space: nowrap;
+              text-align: left;
+            }
+
+            td.add-td {
+              text-align: right;
+              vertical-align: top;
+              padding: 18px 24px;
+
+              > div {
+                height: 24px;
+                > svg {
+                  stroke: var(--color-body);
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .price-matrix-btn {
+        display: flex;
+        align-items: center;
+        margin-top: 16px;
+        width: fit-content;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 7px 16px;
+        border-radius: 10px;
+        border: 1px solid var(--color-line);
+        color: var(--title-active);
+        background: var(--filter-input-background);
+        cursor: pointer;
+        user-select: none;
+
+        > svg {
+          margin-left: 15px;
+          stroke: var(--color-body);
+        }
+      }
+
+      .swap-fee {
+        margin-top: 16px;
+        padding: 16px;
+        border: 1px solid var(--color-border);
+        border-radius: 10px;
+        display: flex;
+        flex-flow: column;
+
+        > div:last-child {
+          margin-left: 10px;
+          width: 250px;
+        }
+      }
+
+      .swap-fee-ratio {
+        margin-top: 16px;
+        padding: 16px;
+        border: 1px solid var(--color-border);
+        border-radius: 10px;
+        display: flex;
+        flex-flow: column;
+
+        > div:last-child {
+          display: flex;
+          align-items: center;
+          padding-left: 10px;
+
+          .input-wrapper {
+            display: flex;
+            align-items: center;
+            align-self: flex-start;
+            margin-right: 60px;
+
+            .label {
+              font-size: 16px;
+              line-height: 20px;
+              color: var(--body-text);
+              margin: 8px 8px 0 0;
+              align-self: flex-start;
+            }
+
+            > div:last-child {
+              flex: 1;
+              width: 250px;
+            }
+          }
+        }
+      }
+
+      .rights {
+        margin-top: 16px;
+        padding: 16px;
+        border: 1px solid var(--color-border);
+        border-radius: 10px;
+        display: flex;
+        flex-flow: column;
+
+        .sub-title {
+          margin-bottom: 8px;
+        }
+
+        .option-wrapper {
+          display: flex;
+          align-items: center;
+          font-size: 16px;
+          line-height: 20px;
+          color: var(--body-text);
+          margin: 8px 10px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+
+        .error {
+          color: red;
+          margin-left: 10px;
+        }
+      }
+
+      .message {
+        width: 100%;
+
+        textarea {
+          background-color: var(--block-background);
+          width: 100%;
+          margin-top: 30px;
+          padding: 16px;
+          color: var(--title-active);
+          box-sizing: border-box;
+        }
+
+        textarea::placeholder {
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 20px;
+        }
+
+        .error {
+          color: red;
+        }
+      }
+
+      .action-buttons {
+        margin-top: 30px;
+        display: flex;
+
+        > button {
+          padding: 12px 48px;
+          margin-right: 30px;
+        }
+
+        > button:first-child {
+          color: var(--title-active);
+          border: 1px solid var(--title-active);
+        }
+
+        > button:first-child:disabled {
+          color: var(--btn-text-disabled);
+          border: 1px solid var(--btn-border-secondary-disabled);
+        }
+      }
+
+      .tooltip-container {
+        .tooltip {
+          display: flex;
+          align-items: center;
+          margin-top: 20px;
+          flex: 1;
+
+          .custom-tooltip {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+            > div {
+              color: var(--title-active);
+              text-decoration: underline;
+              margin-right: 6px;
+            }
+
+            > svg {
+              width: 16px;
+              height: 16px;
+              fill: var(--title-active);
+            }
+          }
+        }
+      }
+    }
+
+    input::placeholder {
+      color: var(--color-placeholder) !important;
+    }
+  }
+}

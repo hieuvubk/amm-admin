@@ -1,0 +1,25 @@
+.price-matrix-table {
+  margin-top: 16px;
+  background: var(--bg-matrix-price);
+  border-radius: 5px;
+  border: 1px solid var(--color-line);
+  border-collapse: separate;
+  border-spacing: 0pt;
+
+  th,
+  td {
+    color: var(--color-body) !important;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 5px 30px 5px 10px;
+  }
+
+  th {
+    text-align: left;
+  }
+
+  td {
+    border-top: 1px solid var(--color-line);
+  }
+}

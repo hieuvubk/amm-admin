@@ -1,0 +1,101 @@
+:root {
+  .title-user {
+    text-align: center;
+    font-weight: 500;
+    font-size: 26px;
+    color: var(--color-title-active);
+    .close-button {
+      position: absolute;
+      right: 0;
+      top: 10px;
+      margin-top: 5px;
+      color: var(--color-title-active);
+    }
+  }
+  .box_up {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    button {
+      height: 44px;
+      width: 179px;
+      border-radius: 12px;
+      color: var(--color-title-active);
+      border-color: var(--color-title-active);
+    }
+  }
+  .dialog-container {
+    width: 468px;
+    height: 264px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .button-container {
+    margin-left: 20px;
+    background-color: #06c270;
+    border: none;
+  }
+  .text-content {
+    color: var(--body-text);
+    font-size: 16px;
+  }
+  .modal-type {
+    overflow: unset !important;
+  }
+  .MuiDialog-paper {
+    overflow: unset !important;
+  }
+  .modal-content,
+  .MuiDialog-paperWidthSm {
+    width: 500px !important;
+    overflow: unset !important;
+  }
+  .dialog-modal {
+    width: 500px !important;
+  }
+  .MuiDialog-paper {
+    overflow: unset !important;
+  }
+  .btn-action {
+    margin: 8px 20px;
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+    .btn-cancel {
+      color: #fff;
+      border: 1px solid var(--color-white);
+      background: #2a2c33;
+      border-radius: 12px;
+      height: 44px;
+      &:hover,
+      &:active,
+      &:focus {
+        color: #fff;
+        border: 1px solid var(--color-white);
+        background: #2a2c33;
+        border-radius: 12px;
+        height: 44px;
+      }
+    }
+    .btn-approve {
+      color: #fff;
+      border: 1px solid var(--color-white);
+      background: var(--color-success);
+      border-radius: 12px;
+      height: 44px;
+      margin-left: 10px;
+      &:hover,
+      &:active,
+      &:focus {
+        color: #fff;
+        border: 1px solid var(--color-white);
+        background: var(--color-success);
+        border-radius: 12px;
+        height: 44px;
+      }
+    }
+  }
+}

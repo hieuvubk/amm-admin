@@ -1,0 +1,15 @@
+.info-container {
+  border: 1px solid var(--line);
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 10px 30px 10px 30px;
+
+  .info {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--title-active);
+    margin: 10px 0 10px 0;
+  }
+}

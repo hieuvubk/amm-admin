@@ -1,0 +1,40 @@
+:root {
+  .pool-dashboard {
+    display: flex;
+    flex-flow: column;
+    padding: 30px;
+    margin-left: 260px;
+
+    .utilities-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 30px 0;
+
+      .download-create-btn {
+        display: flex;
+        align-items: center;
+
+        .request-btn {
+          span {
+            height: 20px;
+          }
+        }
+      }
+    }
+
+    .asset-cell {
+      display: flex;
+      width: 100%;
+      align-items: center;
+
+      .assets-list {
+        margin: 8px 0 8px 6px;
+        display: grid;
+        width: 100%;
+        grid-template-columns: auto auto;
+        column-gap: 8px;
+      }
+    }
+  }
+}

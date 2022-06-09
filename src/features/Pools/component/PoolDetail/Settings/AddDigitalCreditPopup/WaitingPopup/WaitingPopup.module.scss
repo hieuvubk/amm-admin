@@ -1,0 +1,60 @@
+.dialog-root {
+  :global(.MuiDialog-paper) {
+    padding: 30px;
+  }
+
+  .dialog-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    > svg {
+      cursor: pointer;
+    }
+
+    > div {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 32px;
+      color: var(--title-active);
+    }
+  }
+
+  .dialog-body {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+
+    > img {
+      width: 80px;
+      height: 80px;
+    }
+
+    .under-svg {
+      margin-top: 30px;
+    }
+
+    > div {
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 28px;
+      color: var(--color-body);
+      text-align: center;
+    }
+  }
+
+  .dialog-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+
+    > button {
+      flex: 1;
+      border-radius: 12px;
+    }
+  }
+}

@@ -1,0 +1,313 @@
+.dialog-root {
+  :global(.MuiDialog-paper) {
+    padding: 30px;
+  }
+
+  .dialog-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    > svg {
+      cursor: pointer;
+    }
+
+    > div {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 32px;
+      color: var(--title-active);
+    }
+  }
+
+  .dialog-body {
+    > form {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+
+      > table {
+        table-layout: fixed;
+        width: 100%;
+        padding: 0px 16px;
+
+        > thead {
+          th {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: var(--title-active);
+            padding: 24px 24px;
+            margin: 0;
+            user-select: none;
+          }
+
+          th.digital-credits-th {
+            width: 20%;
+            text-align: left;
+            padding-left: 0;
+          }
+
+          th.balance-th {
+            width: 10%;
+            text-align: right;
+            padding-left: 0;
+          }
+
+          th.weight-th {
+            width: 15%;
+            text-align: right;
+          }
+
+          th.percent-th {
+            width: 15%;
+          }
+
+          th.amount-th {
+            width: 15%;
+
+            > div {
+              display: flex;
+              align-items: center;
+              justify-content: flex-end;
+
+              > svg {
+                width: 20px;
+                height: 20px;
+                fill: var(--title-active);
+                margin-right: 5px;
+                cursor: pointer;
+              }
+            }
+          }
+
+          th.price-th {
+            width: 10%;
+            text-align: right;
+          }
+
+          th.value-th {
+            width: 15%;
+            text-align: right;
+          }
+        }
+
+        > tbody {
+          td {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 20px;
+            color: var(--color-body);
+            white-space: normal;
+            border-top: 1px solid var(--line);
+          }
+
+          td.digital-credits-td {
+            text-align: left;
+            width: fit-content;
+            vertical-align: top;
+            padding: 17.5px 0px;
+
+            > div.token-selector {
+              > button:first-child {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                padding-left: 0;
+                color: var(--color-body);
+                text-transform: none;
+
+                img {
+                  margin-right: 6.5px;
+                }
+              }
+
+              div.error {
+                color: red;
+              }
+            }
+
+            .token-icon-symbol-unlock {
+              display: flex;
+              align-items: center;
+
+              > img {
+                margin-right: 6.5px;
+              }
+
+              > button:nth-child(1) {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                padding-left: 0;
+                color: var(--color-body);
+                text-transform: none;
+
+                > span {
+                  > img {
+                    margin-right: 6.5px;
+                  }
+                }
+              }
+
+              > button:nth-child(2) {
+                margin-left: 12px;
+              }
+            }
+          }
+
+          td.balance-td {
+            text-align: right;
+            vertical-align: top;
+            padding: 20px 24px;
+          }
+
+          td.weight-td {
+            text-align: right;
+            vertical-align: top;
+            padding: 20px 24px;
+          }
+
+          td.percent-td {
+            text-align: center;
+            vertical-align: top;
+            padding: 20px 24px;
+          }
+
+          td.amount-td {
+            text-align: right;
+            vertical-align: top;
+            padding: 20px 24px;
+          }
+
+          td.price-td {
+            text-align: right;
+            vertical-align: top;
+            padding: 20px 24px;
+          }
+
+          td.value-td {
+            text-align: right;
+            vertical-align: top;
+            padding: 20px 24px;
+          }
+
+          td.digital-credits-td.new-token {
+            padding-top: 23.5px;
+            padding-bottom: 23.5px;
+          }
+
+          td.amount-td.new-token,
+          td.weight-td.new-token {
+            padding: 18px 24px;
+
+            span {
+              text-align: left;
+            }
+          }
+
+          td.percent-td.new-token,
+          td.price-td.new-token,
+          td.value-td.new-token,
+          td.balance-td.new-token {
+            padding: 26px 24px;
+          }
+        }
+      }
+    }
+
+    .price-matrix-btn {
+      display: flex;
+      align-items: center;
+      margin-top: 16px;
+      width: fit-content;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+      padding: 7px 16px;
+      border-radius: 10px;
+      border: 1px solid var(--color-line);
+      color: var(--title-active);
+      background: var(--filter-input-background);
+      cursor: pointer;
+      user-select: none;
+
+      > svg {
+        margin-left: 15px;
+        stroke: var(--color-body);
+      }
+    }
+  }
+
+  .warning {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    background: rgba($color: #ffcc00, $alpha: 0.3);
+    border-radius: 8px;
+    padding: 6px 10px;
+
+    > svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    > div {
+      color: var(--title-active);
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+      margin-left: 18px;
+    }
+  }
+
+  .dialog-actions {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+
+    > button {
+      border-radius: 12px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+
+    > button:first-child {
+      margin-right: 8px;
+      color: var(--text-color);
+      border: 1px solid var(--text-color);
+
+      &:disabled {
+        color: var(--btn-text-disabled);
+        border: 1px solid var(--btn-border-secondary-disabled);
+      }
+    }
+
+    > button:last-child {
+      margin-left: 8px;
+      padding-left: 48px;
+      padding-right: 48px;
+    }
+  }
+
+  .tooltip {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    flex: 1;
+
+    .custom-tooltip {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      > div {
+        color: var(--title-active);
+        text-decoration: underline;
+        margin-right: 6px;
+      }
+    }
+  }
+}

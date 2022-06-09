@@ -1,0 +1,51 @@
+:root {
+  .admin-create {
+    display: flex;
+    flex-grow: 1;
+    flex-flow: column;
+    padding: 30px;
+    margin-left: 260px;
+
+    .title {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 28px;
+      margin-top: 30px;
+      color: var(--title-active);
+    }
+
+    .form-container {
+      border: 1px solid var(--line);
+      box-sizing: border-box;
+      border-radius: 10px;
+      margin-top: 20px;
+      padding: 30px;
+      display: flex;
+
+      > form {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        max-width: 50%;
+
+        > label {
+          margin-bottom: 8px;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 20px;
+          color: var(--color-body);
+        }
+
+        .wallet-address-field:not(:last-child) {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  .btn-submit {
+    margin-top: 30px;
+  }
+  .btn-submit button {
+    width: 170px !important;
+  }
+}

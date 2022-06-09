@@ -1,0 +1,47 @@
+:root {
+  .admin-detail {
+    display: flex;
+    flex-flow: column;
+    padding: 30px;
+    margin-left: 260px;
+
+    .title-switch-container {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 30px;
+
+      .title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+
+        color: var(--title-active);
+      }
+
+      .switch-containter {
+        display: flex;
+        align-items: center;
+
+        .disable-label {
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 20px;
+          color: var(--color-body);
+        }
+
+        .switch-btn {
+          padding: 0 12px 0 12px;
+        }
+
+        .activate-label {
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 20px;
+          color: var(--color-primary);
+        }
+      }
+    }
+  }
+}

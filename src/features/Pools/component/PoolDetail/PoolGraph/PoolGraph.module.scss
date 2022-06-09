@@ -1,0 +1,46 @@
+.filter-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+
+  .time-filter {
+    display: flex;
+    align-items: center;
+    > span {
+      margin-right: 12px;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 16px;
+      color: var(--placeholder);
+    }
+
+    > div:last-child {
+      padding-left: 4px;
+      padding-right: 4px;
+    }
+  }
+
+  .tabs {
+    display: flex;
+    align-items: center;
+
+    > div {
+      margin-right: 8px;
+    }
+
+    > svg {
+      cursor: pointer;
+    }
+  }
+}
+
+.loading {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% - 40px);
+  width: calc(100% - 40px);
+  z-index: 1;
+}

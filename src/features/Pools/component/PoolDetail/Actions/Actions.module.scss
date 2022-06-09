@@ -1,0 +1,77 @@
+.pool-actions {
+  background: var(--block-background);
+  border-radius: 10px;
+  padding: 30px;
+
+  .gradual-weight-change {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+
+    .action-body {
+      > .header {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: var(--title-active);
+      }
+
+      > .description {
+        margin-top: 20px;
+        width: 400px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        color: var(--color-body);
+      }
+
+      > .weight-change-table {
+        width: 400px;
+        margin-top: 30px;
+        background: var(--bg-matrix-price);
+        border: 1px solid var(--line);
+        border-radius: 5px;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+
+        .header {
+          display: flex;
+          padding: 5px 10px;
+          color: var(--color-body);
+
+          > div {
+            width: 100px;
+          }
+        }
+
+        .row {
+          display: flex;
+          padding: 5px 10px;
+          border-top: 1px solid var(--line);
+          color: var(--title-active);
+
+          > div:first-child {
+            display: flex;
+
+            > img {
+              margin-right: 6px;
+            }
+          }
+
+          > div {
+            width: 100px;
+          }
+        }
+      }
+    }
+
+    .action-buttons {
+      > button {
+        align-self: flex-end;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.filter-form {
+  height: 36px;
+  display: flex;
+  align-items: center;
+
+  > div {
+    margin-right: 16px;
+  }
+
+  input {
+    background: var(--filter-input-background) !important;
+  }
+}

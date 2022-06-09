@@ -1,0 +1,162 @@
+.settings {
+  padding: 30px;
+  background: var(--block-background);
+  border-radius: 10px;
+  border: 1px solid var(--line);
+
+  .setting-detail {
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 16px;
+
+    .title {
+      color: var(--title-active);
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+
+      > svg {
+        margin-left: 6px;
+        cursor: pointer;
+      }
+    }
+
+    .swapping-setting {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      color: var(--color-body);
+      display: flex;
+      flex-flow: column;
+
+      > div:first-child {
+        display: flex;
+
+        > div {
+          display: flex;
+          align-items: center;
+          margin: 0 30px 0 10px;
+
+          > div:first-child {
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+
+    .digital-credits-setting {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      color: var(--color-body);
+      display: flex;
+      align-items: center;
+
+      .tokens-list {
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+        flex-wrap: wrap;
+
+        > div {
+          display: flex;
+          margin-right: 16px;
+
+          > div:first-child {
+            margin-right: 4px;
+          }
+        }
+      }
+
+      .edit-buttons {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+
+        > button {
+          white-space: nowrap;
+          margin-right: 16px;
+        }
+
+        > button:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .fees-setting {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      color: var(--color-body);
+      display: flex;
+      flex-flow: column;
+      width: 40%;
+
+      .fee-input {
+        display: flex;
+        align-items: center;
+        margin: 30px 30px 0 10px;
+
+        > div:first-child {
+          min-width: 150px;
+          margin-right: 8px;
+          white-space: nowrap;
+        }
+      }
+
+      .fee-input:first-child {
+        margin-top: 0px;
+      }
+
+      > div:first-child {
+        margin-top: 0px;
+        margin-left: 10px;
+      }
+    }
+
+    .total-lp-token-setting {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      color: var(--color-body);
+      display: flex;
+      flex-flow: column;
+      width: 20%;
+
+      > div:first-child {
+        display: flex;
+        margin-left: 10px;
+      }
+    }
+
+    .lp-setting {
+      color: var(--color-body);
+      margin-left: 10px;
+    }
+
+    .action-buttons {
+      margin-top: 20px;
+      display: flex;
+
+      > button:first-child {
+        margin: 0 20px 0 10px;
+      }
+    }
+  }
+
+  .setting-detail:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90px;
+}

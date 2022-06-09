@@ -1,0 +1,104 @@
+.pool-info {
+  background: var(--block-background);
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 30px;
+
+  .detail-first-col,
+  .detail-second-col {
+    flex: 0.5;
+    overflow: hidden;
+  }
+
+  .detail-first-col,
+  .detail-second-col,
+  .detail-third-col {
+    .pair {
+      margin-bottom: 16px;
+
+      > div:first-child {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: var(--color-body);
+        margin-bottom: 8px;
+      }
+
+      > div:last-child {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+        color: var(--title-active);
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+
+        > img {
+          margin-left: 8px;
+          cursor: pointer;
+        }
+      }
+
+      > table {
+        th,
+        td {
+          padding: 0;
+          padding-right: 16px;
+          margin: 0;
+          border: none;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 28px;
+          text-align: left;
+          color: var(--title-active);
+        }
+      }
+    }
+
+    .pair:last-child {
+      margin: 0;
+    }
+  }
+
+  .detail-third-col {
+    flex: 1;
+
+    > div:first-child {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: var(--color-body);
+    }
+
+    .price-matrix-table {
+      margin-top: 8px;
+      margin-bottom: 16px;
+      background: var(--bg-matrix-price);
+      border-radius: 5px;
+      border: 1px solid var(--color-line);
+      border-collapse: separate;
+      border-spacing: 0pt;
+
+      th,
+      td {
+        color: var(--color-body) !important;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        padding: 5px 30px 5px 10px;
+      }
+
+      th {
+        text-align: left;
+      }
+
+      td {
+        border-top: 1px solid var(--color-line);
+      }
+    }
+  }
+}
